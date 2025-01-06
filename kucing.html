@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dwi Artanto - Koleksi Video Kucing</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            min-height: 100vh;
+            padding: 2rem;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        h1 {
+            color: #2c3e50;
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .back-button {
+            display: inline-block;
+            padding: 0.8rem 1.5rem;
+            background-color: #3498db;
+            color: white;
+            text-decoration: none;
+            border-radius: 25px;
+            transition: all 0.3s ease;
+            margin-bottom: 2rem;
+        }
+
+        .back-button:hover {
+            background-color: #2980b9;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        .video-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            gap: 2rem;
+            padding: 1rem;
+        }
+
+        .video-container {
+            background: white;
+            padding: 1rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .video-container:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+        }
+
+        video {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+
+        .video-title {
+            margin-top: 1rem;
+            text-align: center;
+            color: #34495e;
+            font-weight: 500;
+        }
+
+        @media (max-width: 1200px) {
+            .video-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 1rem;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            .video-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Koleksi Video Dwi Artanto</h1>
+            <a href="index.html" class="back-button">Kembali</a>
+        </div>
+
+        <div class="video-grid">
+            <div class="video-container">
+                <video controls autoplay>
+                    <source src="Kucing sholat dwi artanto (1).mp4" type="video/mp4"/>
+                </video>
+                <h3 class="video-title">Dwi Artanto 1</h3>
+            </div>
+            <div class="video-container">
+                <video controls autoplay>
+                    <source src="Kucing sholat dwi artanto (1).mp4" type="video/mp4"/>
+                </video>
+                <h3 class="video-title">Dwi Artanto 2</h3>
+            </div>
+            <div class="video-container">
+                <video controls autoplay>
+                    <source src="Kucing sholat dwi artanto (1).mp4" type="video/mp4"/>
+                </video>
+                <h3 class="video-title">Dwi Artanto 3</h3>
+            </div>
+            <div class="video-container">
+                <video controls autoplay>
+                    <source src="Kucing sholat dwi artanto (1).mp4" type="video/mp4"/>
+                </video>
+                <h3 class="video-title">Dwi Artanto 4</h3>
+            </div>
+            <div class="video-container">
+                <video controls autoplay>
+                    <source src="Kucing sholat dwi artanto (1).mp4" type="video/mp4"/>
+                </video>
+                <h3 class="video-title">Dwi Artanto 5</h3>
+            </div>
+            <div class="video-container">
+                <video controls autoplay>
+                    <source src="Kucing sholat dwi artanto (1).mp4" type="video/mp4"/>
+                </video>
+                <h3 class="video-title">Dwi Artanto 6</h3>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
